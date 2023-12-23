@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boston Housing</title>
 </head>
-
 <body>
     <h1>Boston Housing Prediction</h1>
     <ul>
@@ -16,18 +14,17 @@
         <li>MEDV: Median Value of Owner-Occupied Homes</li>
     </ul>
     <h2>Prediction</h2>
-    <form action="/...." method=".....">
+    <form action="/prediction" method="POST"> <!-- Updated action and method -->
         <label for="RM">RM:</label>
-        <input type="number" name="....." step="any" required>
+        <input type="number" name="RM" step="any" required> <!-- Updated name attribute -->
         <br>
-        <label for="LSTAT">LSTAT</label>
-        <input type="number" name="....." step="any" required>
+        <label for="LSTAT">LSTAT:</label>
+        <input type="number" name="LSTAT" step="any" required> <!-- Updated name attribute -->
         <br>
-        <label for="PTRATIO">PTRATIO</label>
-        <input type="number" name="....." step="any" required>
+        <label for="PTRATIO">PTRATIO:</label>
+        <input type="number" name="PTRATIO" step="any" required> <!-- Updated name attribute -->
         <br>
         <button type="submit">Predict MEDV</button>
     </form>
 </body>
-
 </html>
